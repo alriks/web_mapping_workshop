@@ -50,6 +50,16 @@ var clickHandler= function (e){
       
       	info += '<div>';
       	info += '<h2>' + feature.properties.name + '</h2>'
-        info += '
+        if (feature.properties. cuisine) {info += '<p>' + feature.properties.cuisine + "</p>;}
+        if (feature.properties. phone) {info += '<p>' + feature.properties.phone + "</p>;}
+        if (feature.properties. website) {info += '<p><a href="' + feature.properties.website + '</a></p>';}
+        info+= '</div>'
+        $('#info').append(info);
     })
 }
+      
+featureLayer.on('ready',function(){
+  this.eachLayer(function(layer){
+    layer.on('click',clickHandler)
+  })
+})  
