@@ -125,6 +125,6 @@ function getDirections(frm, to){
           	"stroke-opacity": 0.8,
           	"stroke-width": 8
     	}
-    })      
+    }      
     })
    
