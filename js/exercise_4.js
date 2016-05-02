@@ -60,7 +60,11 @@ var clickHandler= function (e){
     })
 }
 
+  $('#info').append(info);
+});
+
 var myGeoJSON = myLocation.getGeoJSON();
+
 getDirections(myGeoJSON.geometry.coordinates, feature.geometry.coordinates);
       
 featureLayer.on('ready',function(){
