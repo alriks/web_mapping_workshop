@@ -31,4 +31,5 @@ featurelayer.on('ready', function(){
           	"marker-symbol": "restaurant"
         }))
     })
+    ap.fitBounds(featureLayer.getBounds());
 })
