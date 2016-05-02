@@ -103,7 +103,7 @@ function getDirections(frm, to){
           {lat: to[1],lon: to[0]},
         ],
       	costing: 'pedestrian',
-      	units: 'kilometers'
+      	units: 'miles'
     })
     $.ajax({
     	url: 'http://valhalla.mapzen.com/route',
