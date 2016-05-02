@@ -19,11 +19,11 @@ map.setView([39, -96], 4);
 
 var datafile='data/restaurants.geojson';
 
-var featureLayer=L.mapbox.featureLayer();
+var featureLayer= L.mapbox.featureLayer();
 	featureLayer.loadURL(datafile);
 	featureLayer.addTo(map);
 
-featurelayer.on('ready', function(){
+featureLayer.on('ready', function(){
 	this.eachLayer(function(){
     	layer.setIcon(L.mapbox.marker.icon({
         	"marker-color": "#8834bb",
