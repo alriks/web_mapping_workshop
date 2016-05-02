@@ -61,7 +61,6 @@ var clickHandler= function (e){
 }
 
   $('#info').append(info);
-});
 
 var myGeoJSON = myLocation.getGeoJSON();
 
